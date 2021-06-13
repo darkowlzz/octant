@@ -46,7 +46,8 @@ import (
 	v111 "k8s.io/client-go/kubernetes/typed/scheduling/v1"
 	v1alpha13 "k8s.io/client-go/kubernetes/typed/scheduling/v1alpha1"
 	v1beta113 "k8s.io/client-go/kubernetes/typed/scheduling/v1beta1"
-	v1alpha14 "k8s.io/client-go/kubernetes/typed/settings/v1alpha1"
+
+	// v1alpha14 "k8s.io/client-go/kubernetes/typed/settings/v1alpha1"
 	v112 "k8s.io/client-go/kubernetes/typed/storage/v1"
 	v1alpha15 "k8s.io/client-go/kubernetes/typed/storage/v1alpha1"
 	v1beta114 "k8s.io/client-go/kubernetes/typed/storage/v1beta1"
@@ -608,12 +609,12 @@ func (mr *MockKubernetesInterfaceMockRecorder) SchedulingV1() *gomock.Call {
 }
 
 // SettingsV1alpha1 mocks base method
-func (m *MockKubernetesInterface) SettingsV1alpha1() v1alpha14.SettingsV1alpha1Interface {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "SettingsV1alpha1")
-	ret0, _ := ret[0].(v1alpha14.SettingsV1alpha1Interface)
-	return ret0
-}
+// func (m *MockKubernetesInterface) SettingsV1alpha1() v1alpha14.SettingsV1alpha1Interface {
+//     m.ctrl.T.Helper()
+//     ret := m.ctrl.Call(m, "SettingsV1alpha1")
+//     ret0, _ := ret[0].(v1alpha14.SettingsV1alpha1Interface)
+//     return ret0
+// }
 
 // SettingsV1alpha1 indicates an expected call of SettingsV1alpha1
 func (mr *MockKubernetesInterfaceMockRecorder) SettingsV1alpha1() *gomock.Call {
